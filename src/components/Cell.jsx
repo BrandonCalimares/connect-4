@@ -1,5 +1,5 @@
 export function Cell() {
   return (
-    <div className="bg-blue-500 size-18 border-black border hover:cursor-pointer"></div>
+    <div className="bg-[radial-gradient(circle_at_center,transparent_0_54%,#2b7fff_56%)] size-18  hover:cursor-pointer "></div>
   );
 }

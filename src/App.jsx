@@ -4,7 +4,9 @@ import "./index.css";
 function App() {
   return (
     <>
-      <h1 className="text-4xl text-center mb-10">Connect 4</h1>
+      <h1 className="text-4xl text-center mb-10 font-bold text-blue-500">
+        Connect 4
+      </h1>
       <Board />
     </>
   );
