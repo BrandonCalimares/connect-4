@@ -4,12 +4,15 @@ import { useState } from "react";
 import "./index.css";
 
 function App() {
+  const prevCells = JSON.parse(localStorage.getItem("cells"));
+  const prevTurn = localStorage.getItem("turn");
   const [cells, setCells] = useState(
-    Array(7)
-      .fill(null)
-      .map(() => Array(6).fill(null))
+    prevCells ||
+      Array(7)
+        .fill(null)
+        .map(() => Array(6).fill(null))
   );
-  const [turn, setTurn] = useState("red");
+  const [turn, setTurn] = useState(prevTurn || "red");
   const [winner, setWinner] = useState(null);
 
   return (
